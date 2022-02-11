@@ -2,63 +2,86 @@
 
 <html>
 <head>
-<title>Beauty Boutique</title>
-<style type = "text/css">
-  
-  #banner {
-    background-image: url("Banner.JPG"); 
-    background-size: cover; 
-    height: 400px;
-    width: 100%;
-    padding-top: 100px;
-    box-sizing: border-box;
-    position: fixed;
-    z-index: 99;
-    opacity: 0.9; 
-    text-align: center;
-    font-size: 100px;
-    font-family: Georgia, sans-serif;
-    color: #591202;
-    font-weight: bold; 
-    
-  }
-  
-  div {
-    
-    display: inline-block; 
-  }
-  
-  #text {
-    text-align: center;
-    font-size: 40px;
-    font-family: cursive, serif;
-    color: ##591202;
-    font-weight: bold;
-   
-    
-  }
+<title>Proper Patola: Home</title>
+
+<link rel= "stylesheet" href= "style.css"> 
+
+ <style>
  
-  .highlight{
-    
-    width: 68%;
-    display: inline-block;
-    position: relative;
-    background-color: #666;
-    color: #fff;
-    
-    
-    
+ #color{
+     text-align: center; 
+     font-size: 30px;
+     font-family: Modern, serif;
+     color: #591202;
+     font-weight: bold; 
+     display: block;
+     
+ }
+ 
+ .row {
+   display: flex;
+ }
+
+ .column {
+   flex: 2%;
+   padding: 5px;
+ }
+ 
+ @media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
   }
-
-
-</style>
+}
+ 
+ </style> 
+ 
 </head>
+
+
+
+
+
 <body>
-  
-  <div id = "banner"> Proper Patola </div>
-  <div id = "text"> The finest selection of Indian beauty </div>  
-  
+  <div id = "text">The finest selection of South Asian beauty</div> 
+ 
+
+    <nav> 
+        <div class = "box">
+            <div class = "home">
+                <a href = "home.html">Home</a>
+          </div>
+          
+          <div class = "home">
+              <a href = "contact.html">Contact Us</a>
+          </div>
+          
+          <div class = "home">
+              <a href = "services.html">Services</a>
+              
+          </div>
+      </div>
+    </nav>
+     <div id = "banner"> Proper Patola </div>
+     <em><div id = "color"> Buy traditional dresses in store for 
+         reasonable prices: For women of all ages. </div></em>
+ 
+
+<div class="row">
+  <div class="column">
+<img src = "blue.jpg" alt ="blue" style = "width: 60%">
+  </div>
+  <div class="column">
+    <img src="green.jpeg" alt="green" style="width:60%">
+  </div>
+  <div class="column">
+    <img src="red.jpeg" alt="red" style="width:60%">
+</div>
+<div class="column">
+  <img src="orange.jpeg" alt="orange" style="width:60%">
+</div>
+</div>
 
 
 </body>
+
 </html>
